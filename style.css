@@ -64,11 +64,17 @@ nav{
 }
 
 .integrantes-container {
+    margin-top: 200px;
     display: flex; 
     transition: transform 0.5s ease-in-out;
 }
 
-.integrantes-card {
+.galeria-container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.integrantes-card, .july-card {
     background: #0acf3b71;
     border: 1px solid #ddd;
     border-radius: 20px; /* borda */
@@ -82,7 +88,7 @@ nav{
     transition: transform 0.3s ease;
 }
 
-.integrantes-card:hover {
+.integrantes-card:hover, .july-card:hover {
     transform: scale(1.05); 
 }
 
@@ -349,4 +355,58 @@ body.darkmode {
 .slide-menu .darkmode-btn {
     margin-top: 20px; /* Distância entre os links e o botão Dark Mode */
     align-self: center; /* Centralizar o botão dentro do menu */
+}
+
+.foto-galeria{
+    margin-bottom: 0px;
+    width: 240px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.galeria-info{
+    margin-top: 20px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.galeria-carrosel{
+    display: grid;
+}
+
+#galeria{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 100px;
+    position: relative;
+    max-width: 1500px;
+    overflow: hidden;
+}
+
+.foto-card{
+    width: 200px; /* tamanho do card */
+    height: 250px; /* altura do card */
+    padding: 30px;
+    text-align: center;
+    margin: 10px; /* espaço entre os cards */
+    transform: scale(1); 
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.foto-perfil{
+    margin-bottom: 10px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 50%; /* deixa a foto arredondada*/
+}
+
+.foto-card h3{
+    margin-left: 20px;
+    text-align: center;
+    font-size: 25px;
 }
