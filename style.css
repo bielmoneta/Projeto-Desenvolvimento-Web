@@ -74,7 +74,7 @@ nav{
     transition: transform 0.5s ease-in-out;
 }
 
-.integrantes-card, .july-card {
+.integrantes-card {
     background: #0acf3b71;
     border: 1px solid #ddd;
     border-radius: 20px; /* borda */
@@ -88,7 +88,7 @@ nav{
     transition: transform 0.3s ease;
 }
 
-.integrantes-card:hover, .july-card:hover {
+.integrantes-card:hover {
     transform: scale(1.05); 
 }
 
@@ -170,7 +170,7 @@ footer {
     color: #fff;
     padding: 20px 10px;
     text-align: center;
-    position: fixed; bottom: 0px; width: 100%;
+    margin-top: 100px;
 }
   
 .rodape-container {
@@ -191,13 +191,13 @@ footer {
 .darkmode-btn {
     background-color: #0acf3b;
     border: none;
-    border-radius: 50%; /* Faz o botão ser circular */
-    width: 50px; /* Define largura fixa */
-    height: 50px; /* Define altura fixa igual à largura */
-    display: flex; /* Ativa o flexbox */
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    display: flex; 
     margin-right: 30px;
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; 
+    justify-content: center; 
     cursor: pointer;
     font-size: 18px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -250,7 +250,7 @@ body.darkmode {
 
 /* Botão do Menu no Modo DarkMode */
 .darkmode .menu-button {
-    background-color: gray; /* Cor cinza para o botão do menu */
+    background-color: gray;
     color: white;
 }
 
@@ -261,13 +261,13 @@ body.darkmode {
 
 /* Links no Menu Slide no Modo DarkMode */
 .darkmode .slide-menu a {
-    color: white; /* Mantém os links brancos no modo escuro */
-    background-color: transparent; /* Remove fundo verde ao passar o mouse */
+    color: white;
+    background-color: transparent; 
 }
 
 .darkmode .slide-menu a:hover {
-    background-color: transparent; /* Não adiciona fundo no hover */
-    color: white; /* Garante que a cor do texto permaneça branca */
+    background-color: transparent; 
+    color: white; /
 }
 
 /* Menu Slide */
@@ -276,7 +276,7 @@ body.darkmode {
     color: #fff;
     border: none;
     border-radius: 50%;
-    width: 50px; /* Tamanho do círculo */
+    width: 50px; /* tamanho do círculo */
     height: 50px;
     display: flex;
     align-items: center;
@@ -292,16 +292,16 @@ body.darkmode {
 .slide-menu {
     position: fixed;
     top: 0;
-    left: -250px; /* Menu escondido */
+    left: -250px; /* menu fica escondido á esquerda dop site */
     width: 250px;
-    height: 100%; /* Ocupa a altura da tela */
+    height: 100%; 
     background-color: #0acf3b;
     color: #fff;
     display: flex;
-    flex-direction: column; /* Alinha os itens verticalmente */
-    justify-content: flex-start; /* Alinha os itens ao topo */
+    flex-direction: column; 
+    justify-content: flex-start; /* deixa os itens no topo */
     padding: 20px;
-    gap: 20px; /* Espaço entre os itens */
+    gap: 20px; /* deixa espaço entre os itens */
     transition: left 0.3s ease;
     z-index: 999;
     overflow-y: auto;
@@ -312,7 +312,7 @@ body.darkmode {
     font-size: 18px;
     text-align: center;
     color: white;
-    margin-top: 90px; /* Espaço entre o menu e o parágrafo */
+    margin-top: 90px; 
     margin-right: 45px;
 }
 
@@ -320,7 +320,7 @@ body.darkmode {
     font-size: 23px;
     color: white;
     transition: transform 0.5s;
-    text-align: center; /* Centraliza os links */
+    text-align: center;
     margin-top: 20px;
 }
 
@@ -353,8 +353,8 @@ body.darkmode {
 }
 
 .slide-menu .darkmode-btn {
-    margin-top: 20px; /* Distância entre os links e o botão Dark Mode */
-    align-self: center; /* Centralizar o botão dentro do menu */
+    margin-top: 20px; 
+    align-self: center; 
 }
 
 .foto-galeria{
@@ -385,6 +385,10 @@ body.darkmode {
     overflow: hidden;
 }
 
+.galeria-container {
+    margin-left: 12px;
+}
+
 .foto-card{
     width: 200px; /* tamanho do card */
     height: 250px; /* altura do card */
@@ -401,7 +405,7 @@ body.darkmode {
     width: 160px;
     height: 160px;
     object-fit: cover;
-    border: 2px solid black;
+    border: 2px solid #0acf3b;
     border-radius: 50%; /* deixa a foto arredondada*/
 }
 
@@ -409,4 +413,8 @@ body.darkmode {
     margin-left: 20px;
     text-align: center;
     font-size: 25px;
+}
+
+.galeria-container, .integrantes-card {
+    margin: 10px;
 }
